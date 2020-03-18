@@ -933,7 +933,7 @@ void Prt::borP(char str[]){
 	for(i = 0;i < padding;i++)print("");
 	for(i = 0;1;i++){
 		if(str[i]=='&'){substr[(haveLine?Len*2/win:i-begin)] = '\0';begin = i+1;print(substr);substr[0] = '\0';haveLine = false;}
-		else if(str[i]=='~'){
+		else if(str[i]=='~'){               
 			for(int j = 0;j < Len;j++){
 				strcat(substr,"йд");
 			}
